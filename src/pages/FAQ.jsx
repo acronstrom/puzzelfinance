@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './FAQ.css'
 
 function FAQ() {
@@ -298,7 +299,7 @@ function FAQ() {
               Our support team is here to help. Reach out and we'll get back to you within 24 hours.
             </p>
             <div className="contact-buttons">
-              <a href="/contact" className="btn btn-primary">Contact Support</a>
+              <Link to="/contact" className="btn btn-primary">Contact Support</Link>
               <a href="tel:+15551234567" className="btn btn-secondary">Call Us Now</a>
             </div>
           </div>
