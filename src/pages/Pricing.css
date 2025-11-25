@@ -1,0 +1,258 @@
+/* Pricing Page Styles */
+.pricing-page {
+  animation: fadeIn 0.6s ease-in;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pricing-card.featured {
+  border: 2px solid var(--accent-blue);
+  transform: scale(1.05);
+  box-shadow: 0 12px 48px rgba(0, 113, 227, 0.2);
+}
+
+.popular-badge {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-hover) 100%);
+  color: white;
+  text-align: center;
+  padding: 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.plan-header {
+  background: linear-gradient(135deg, var(--accent-light) 0%, var(--secondary-bg) 100%);
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.plan-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--primary-text);
+}
+
+.plan-price {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.price-currency {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  margin-top: 0.5rem;
+}
+
+.price-value {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  line-height: 1;
+}
+
+.price-value.custom {
+  font-size: 2.5rem;
+  margin-top: 0.75rem;
+}
+
+.price-period {
+  font-size: 1.125rem;
+  color: var(--secondary-text);
+  margin-top: 2rem;
+}
+
+.plan-description {
+  font-size: 1rem;
+  color: var(--secondary-text);
+  margin: 0;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 2.5rem 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.plan-features li {
+  font-size: 1rem;
+  color: var(--primary-text);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.plan-features li:has(✓) {
+  color: var(--primary-text);
+}
+
+.plan-features li:has(—) {
+  color: var(--secondary-text);
+  opacity: 0.5;
+}
+
+.plan-cta {
+  margin: 0 2rem 2.5rem 2rem;
+  display: block;
+  text-align: center;
+}
+
+/* Features Table */
+.comparison-wrapper {
+  overflow-x: auto;
+  border-radius: 18px;
+  box-shadow: var(--card-shadow);
+}
+
+.features-table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.features-table thead {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-hover) 100%);
+  color: white;
+}
+
+.features-table th,
+.features-table td {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.features-table th {
+  font-weight: 600;
+  font-size: 1.0625rem;
+}
+
+.features-table td {
+  font-size: 0.9375rem;
+}
+
+.features-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.features-table tbody tr:hover {
+  background-color: var(--tertiary-bg);
+}
+
+.feature-category {
+  background: var(--secondary-bg);
+  font-weight: 700;
+  color: var(--primary-text);
+  font-size: 1.0625rem;
+}
+
+.features-table td:first-child {
+  font-weight: 500;
+  color: var(--primary-text);
+}
+
+.features-table td:not(:first-child) {
+  text-align: center;
+  color: var(--secondary-text);
+}
+
+/* FAQ Section */
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+}
+
+.faq-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--primary-text);
+}
+
+.faq-item p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--secondary-text);
+  margin: 0;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-hover) 100%);
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.cta-content h2 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+}
+
+.btn-large {
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+  background: white;
+  color: var(--accent-blue);
+}
+
+.btn-large:hover {
+  background: var(--secondary-bg);
+  color: var(--accent-blue-hover);
+}
+
+@media (max-width: 968px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-card.featured {
+    transform: none;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+}
+
